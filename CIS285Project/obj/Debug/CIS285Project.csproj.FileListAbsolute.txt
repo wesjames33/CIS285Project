@@ -1,0 +1,10 @@
+C:\Users\Wesley\source\repos\CIS285Project\CIS285Project\bin\Debug\CIS285Project.exe.config
+C:\Users\Wesley\source\repos\CIS285Project\CIS285Project\bin\Debug\CIS285Project.exe
+C:\Users\Wesley\source\repos\CIS285Project\CIS285Project\bin\Debug\CIS285Project.pdb
+C:\Users\Wesley\source\repos\CIS285Project\CIS285Project\obj\Debug\CIS285Project.csproj.AssemblyReference.cache
+C:\Users\Wesley\source\repos\CIS285Project\CIS285Project\obj\Debug\CIS285Project.Properties.Resources.resources
+C:\Users\Wesley\source\repos\CIS285Project\CIS285Project\obj\Debug\CIS285Project.csproj.GenerateResource.cache
+C:\Users\Wesley\source\repos\CIS285Project\CIS285Project\obj\Debug\CIS285Project.csproj.CoreCompileInputs.cache
+C:\Users\Wesley\source\repos\CIS285Project\CIS285Project\obj\Debug\CIS285Project.exe
+C:\Users\Wesley\source\repos\CIS285Project\CIS285Project\obj\Debug\CIS285Project.pdb
+C:\Users\Wesley\source\repos\CIS285Project\CIS285Project\obj\Debug\CIS285Project.exe.config
