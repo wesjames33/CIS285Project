@@ -8,6 +8,10 @@ using System.Windows.Forms;
 
 namespace CIS285Project
 {
+    /// <summary>
+    /// Main user interface for the Student Grade Book application.
+    /// Handles user interaction, validation, and data persistence.
+    /// </summary>
     public partial class MainForm : Form
     {
         private GradeBook _gradeBook = new GradeBook();
@@ -80,7 +84,7 @@ namespace CIS285Project
         }
 
         // ----------------------------
-        // LOAD 15 SAMPLE STUDENTS (8 GRADES)
+        // LOAD 19 SAMPLE STUDENTS (8 GRADES)
         // ----------------------------
         private void LoadSampleStudents()
         {
@@ -344,9 +348,10 @@ namespace CIS285Project
             lblStatus.Text = "Loaded 19 active students.";
         }
 
-        // ----------------------------
-        // SUMMARY UPDATE
-        // ----------------------------
+        /// <summary>
+        /// Updates all class summary statistics displayed in the UI,
+        /// including averages and passing counts.
+        /// </summary>
         private void UpdateSummary()
         {
             int count = _gradeBook.Students.Count;
