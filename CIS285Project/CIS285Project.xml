@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CIS285Project</name>
+    </assembly>
+    <members>
+        <member name="T:CIS285Project.MainForm">
+            <summary>
+            Main user interface for the Student Grade Book application.
+            Handles user interaction, validation, and data persistence.
+            </summary>
+        </member>
+        <member name="M:CIS285Project.MainForm.UpdateSummary">
+            <summary>
+            Updates all class summary statistics displayed in the UI,
+            including averages and passing counts.
+            </summary>
+        </member>
+        <member name="T:CIS285Project.Models.GradeBook">
+            <summary>
+            Manages a collection of student records and provides
+            methods for modifying students and calculating class statistics.
+            </summary>
+        </member>
+        <member name="P:CIS285Project.Models.GradeBook.Students">
+            <summary>
+            Gets the list of students in the grade book.
+            </summary>
+        </member>
+        <member name="M:CIS285Project.Models.GradeBook.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CIS285Project.Models.GradeBook"/> class.
+            </summary>
+        </member>
+        <member name="M:CIS285Project.Models.GradeBook.AddStudent(CIS285Project.Models.StudentRecord)">
+            <summary>
+            Adds a new student to the grade book.
+            </summary>
+            <param name="s">The student record to add.</param>
+        </member>
+        <member name="M:CIS285Project.Models.GradeBook.UpdateStudent(System.Int32,CIS285Project.Models.StudentRecord)">
+            <summary>
+            Updates an existing student at the specified index.
+            </summary>
+            <param name="index">The index of the student to update.</param>
+            <param name="s">The updated student record.</param>
+        </member>
+        <member name="M:CIS285Project.Models.GradeBook.RemoveStudent(System.Int32)">
+            <summary>
+            Removes a student from the grade book at the specified index.
+            </summary>
+            <param name="index">The index of the student to remove.</param>
+        </member>
+        <member name="M:CIS285Project.Models.GradeBook.CalculateClassAverage">
+            <summary>
+            Calculates the average grade across all students.
+            </summary>
+            <returns>The class average.</returns>
+        </member>
+        <member name="T:CIS285Project.Models.StudentRecord">
+            <summary>
+            Represents a student record containing the student's name,
+            grades, notes, and calculated average.
+            </summary>
+        </member>
+        <member name="P:CIS285Project.Models.StudentRecord.Name">
+            <summary>
+            The student's full name.
+            </summary>
+        </member>
+        <member name="P:CIS285Project.Models.StudentRecord.Grade1">
+            <summary>First grade.</summary>
+        </member>
+        <member name="P:CIS285Project.Models.StudentRecord.Grade2">
+            <summary>Second grade.</summary>
+        </member>
+        <member name="P:CIS285Project.Models.StudentRecord.Grade3">
+            <summary>Third grade.</summary>
+        </member>
+        <member name="P:CIS285Project.Models.StudentRecord.Grade4">
+            <summary>Fourth grade.</summary>
+        </member>
+        <member name="P:CIS285Project.Models.StudentRecord.Grade5">
+            <summary>Fifth grade.</summary>
+        </member>
+        <member name="P:CIS285Project.Models.StudentRecord.Grade6">
+            <summary>Sixth grade.</summary>
+        </member>
+        <member name="P:CIS285Project.Models.StudentRecord.Grade7">
+            <summary>Seventh grade.</summary>
+        </member>
+        <member name="P:CIS285Project.Models.StudentRecord.Grade8">
+            <summary>Eighth grade.</summary>
+        </member>
+        <member name="P:CIS285Project.Models.StudentRecord.Notes">
+            <summary>
+            Optional notes associated with the student.
+            </summary>
+        </member>
+        <member name="P:CIS285Project.Models.StudentRecord.Average">
+            <summary>
+            Calculates the student's average grade based on all
+            non-null grade values.
+            </summary>
+        </member>
+        <member name="T:CIS285Project.Services.FileStorageService">
+            <summary>
+            Provides functionality for saving and loading student records
+            to and from XML files.
+            </summary>
+        </member>
+        <member name="M:CIS285Project.Services.FileStorageService.Save(System.String,System.Collections.Generic.List{CIS285Project.Models.StudentRecord})">
+            <summary>
+            Saves a list of student records to an XML file.
+            </summary>
+            <param name="filePath">The file path where the XML file will be saved.</param>
+            <param name="students">The list of student records to save.</param>
+        </member>
+        <member name="M:CIS285Project.Services.FileStorageService.Load(System.String)">
+            <summary>
+            Loads student records from an XML file.
+            </summary>
+            <param name="filePath">The file path of the XML file to load.</param>
+            <returns>A list of student records loaded from the file.</returns>
+        </member>
+        <member name="M:CIS285Project.Services.FileStorageService.ParseNullableDouble(System.String)">
+            <summary>
+            Attempts to parse a string value into a nullable double.
+            </summary>
+            <param name="value">The string value to parse.</param>
+            <returns>
+            A nullable double containing the parsed value if successful;
+            otherwise, null.
+            </returns>
+        </member>
+        <member name="T:CIS285Project.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:CIS285Project.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:CIS285Project.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
