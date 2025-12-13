@@ -10,8 +10,17 @@ using System.Xml.Serialization;
 
 namespace CIS285Project.Services
 {
+    /// <summary>
+    /// Provides functionality for saving and loading student records
+    /// to and from XML files.
+    /// </summary>
     public class FileStorageService
     {
+        /// <summary>
+        /// Saves a list of student records to an XML file.
+        /// </summary>
+        /// <param name="filePath">The file path where the XML file will be saved.</param>
+        /// <param name="students">The list of student records to save.</param>
         public void Save(string filePath, List<StudentRecord> students)
         {
             var doc = new XDocument(
@@ -36,6 +45,11 @@ namespace CIS285Project.Services
             doc.Save(filePath);
         }
 
+        /// <summary>
+        /// Loads student records from an XML file.
+        /// </summary>
+        /// <param name="filePath">The file path of the XML file to load.</param>
+        /// <returns>A list of student records loaded from the file.</returns>
         public List<StudentRecord> Load(string filePath)
         {
             var result = new List<StudentRecord>();
@@ -68,6 +82,14 @@ namespace CIS285Project.Services
             return result;
         }
 
+        /// <summary>
+        /// Attempts to parse a string value into a nullable double.
+        /// </summary>
+        /// <param name="value">The string value to parse.</param>
+        /// <returns>
+        /// A nullable double containing the parsed value if successful;
+        /// otherwise, null.
+        /// </returns>
         private double? ParseNullableDouble(string value)
         {
             if (double.TryParse(value, out double d))
